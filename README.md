@@ -22,3 +22,13 @@ RQ2 is answered using scripts that include rq2 in the script title.
 
 ### RQ3
 RQ3 is answered using scripts that include rq3 in the script title. 
+
+### Requirements
+Python==3.11.1
+numpy==1.25.1
+pandas==2.0.2
+scikit-learn==1.3.2
+scipy==1.10.1
+seaborn==0.12.2
+matplotlib==3.7.2
+tqdm==4.65.0
