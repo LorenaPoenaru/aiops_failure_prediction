@@ -18,7 +18,7 @@ library(dplyr)
 library(ggplot2)
 
 datasets <- c('job')
-named_data <- c('Disk_concept_drift_in_batches')
+named_data <- c('Job_concept_drift_in_batches')
 names(named_data) <- datasets
 
 #Change models accordingly
@@ -29,7 +29,6 @@ dfi <- NA
 
 # read csv generated from the python script
 #dfj <- read.csv(paste('./results/', paste('concept_drift', dataset, 'rf', 'feature_importance_rs1', sep='_'), '.csv', sep=''))
-dfj <- read.csv(paste('./Documents/phd_related/AIOps_disk_failure_prediction/feature_importance/', paste('concept_drift', dataset, 'rf', 'feature_importance_rs1', sep='_'), '.csv', sep=''))
 
 
 # create a vector to store pvalues
