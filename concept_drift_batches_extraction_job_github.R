@@ -48,11 +48,12 @@ dfi <- data.frame(X=factor(2:(nrow(dfj)/length(models)+1)), Sig=(pvals < 0.05), 
 
 
 # plot the batches with drift and the drift severity according to the relative difference in error rate
-ggplot(dfi %>% filter(Dataset=='Google'), aes(x=X, y=Y, shape=Sig, color=Sig)) + geom_point() +
-  scale_x_discrete(breaks=seq(2, 50, 2)) + geom_hline(yintercept=0) + 
+ggplot(df %>% filter(Dataset=='Google'), aes(x=X, y=Y, shape=Sig, color=Sig)) + geom_point() + 
+  geom_hline(yintercept=0) + 
   facet_grid(.~Model, scales='free_x') +
-  labs(x='Time Period', y='Relative difference of error rate') + scale_color_discrete(name='Concept drift?') + 
-  scale_shape_manual(name='Concept drift?', values=c(19, 17))
+  labs(x=substitute(paste(bold('Time Period'))), y=substitute(paste(bold('Relative difference of error rate'))))  + scale_color_discrete(name='Batch Label') + 
+  scale_shape_manual(name='Batch Label', values=c(19, 15, 17)) + 
+  scale_x_discrete(breaks=seq(2, 29, 2))
 ggsave('concept_drift_job.pdf', width=190, height=60, units='mm')
 
 # write in file new csv with ground truth results
