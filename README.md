@@ -1,4 +1,4 @@
-# McUDI: Model-Centric Unsupervised Degradation Indicator for Failure Prediction AIOps Solutions
+# Optimizing Model Retraining: Reducing Labeling Costs in Failure Prediction Models
 
 
 
