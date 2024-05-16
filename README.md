@@ -6,8 +6,7 @@
 ```
 .
 ├── datasets                    include the two datasets, google_job_failure.csv and disk_failure_2015.csv to run the scripts
-├── results                     Results (as .csvs  and plots) get saved to this folder
-├── scripts                     Scripts used to get our results from the paper. Scripts are both Jupyter Notebooks and R files.
+├── results                     Results (as CSV files  and plots) get saved to this folder
 
 ```
 
